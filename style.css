@@ -1,0 +1,592 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c0c0c0;
+    padding: 10px;
+    margin: 0;
+}
+
+.container__hour {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #a9a9a9;
+    padding: 20px;
+    margin: 20;
+    border: double;
+    border-color: #000000c2;
+}
+
+.item {
+    text-align: center;
+}
+
+.item__hours {
+    text-align: center;
+    margin: 2;
+}
+
+.paragraph {
+    margin: 5px 0;
+    font-size: 1.3rem;
+}
+
+.count {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    /* Reduzindo a margem para 0 */
+    padding: 0;
+    /* Reduzindo o padding para 0 */
+}
+
+.unit {
+    margin: 0;
+    /* Reduzindo a margem para 0 */
+    padding: 5px;
+}
+
+hr {
+    margin: 20px 0;
+}
+
+#countdown p {
+    margin: 5px 0;
+}
+
+#hours {
+    padding: 0;
+}
+
+
+
+
+
+.container__pack {
+    width: 100%;
+    height: 611px;
+    background-color: #dcdcdc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    color: #000;
+    font-family: Dancing Script, Sans-serif;
+    font-size: 52px;
+    font-weight: 500;
+    line-height: 53px;
+    letter-spacing: .4px;
+    text-align: center;
+    text-shadow: 0 0 0 #000;
+}
+
+.subtitle {
+    color: #000;
+    font-family: 'times new roman', Sans-serif;
+    font-size: 25px;
+    font-weight: 100;
+    line-height: 34px;
+    text-align: center;
+}
+
+.special-pack {
+    width: 300px;
+    height: 50px;
+    background-color: #a9a9a9;
+    border: double;
+    border-color: #000000c2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+    /* Adicionando margem inferior de 20px */
+}
+
+
+
+.special-pack-text {
+    font-family: 'times new roman', Sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+}
+
+
+
+
+
+.information-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.information {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.quote {
+    font-size: 31px;
+    line-height: 1.5;
+    /* Aumentando o espaçamento entre as linhas */
+    color: #000;
+    font-family: 'Times New Roman', sans-serif;
+    font-weight: 100;
+    text-align: center;
+}
+
+.image-cards {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    margin: 0 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 25px;
+    line-height: 1em;
+    color: #000;
+    font-weight: 100;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.information-section {
+    text-align: center;
+}
+
+.quote {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.carousel {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    /* Adicionamos o overflow: hidden para ocultar as imagens fora do carrossel */
+}
+
+.carousel-container {
+    display: flex;
+    width: 100%;
+    /* Definimos a largura total para garantir que as imagens apareçam em uma única linha */
+}
+
+.carousel-slide {
+    flex: 0 0 100%;
+    /* Definimos a largura de cada slide para 100% do container */
+    transition: transform 0.5s;
+}
+
+.carousel-slide img {
+    width: 70%;
+    height: auto;
+    display: block;
+    /* Removemos as margens que poderiam afetar o alinhamento vertical */
+    margin: 0 auto;
+    /* Centralizamos as imagens horizontalmente */
+}
+
+.carousel-navigation {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.carousel-prev,
+.carousel-next {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.carousel-thumbnails {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.carousel-thumbnails img {
+    width: 80px;
+    height: auto;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+/* Adicionamos a classe active para destacar a miniatura da imagem atual */
+.carousel-thumbnails img.active {
+    border: 2px solid #333;
+}
+
+
+
+
+
+
+
+/* Restante do código CSS */
+
+/* Estilos específicos para o segundo carrossel de depoimentos */
+.testimonial-carousel {
+    max-width: 800px;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonial-carousel .carousel-container {
+    display: flex;
+    width: 100%;
+}
+
+.testimonial-carousel .carousel-slide {
+    flex: 0 0 100%;
+    transition: transform 0.5s;
+}
+
+.testimonial-carousel .carousel-slide img {
+    width: 60%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.testimonial-carousel .carousel-navigation {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.testimonial-carousel .carousel-prev,
+.testimonial-carousel .carousel-next {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.testimonial-carousel .carousel-thumbnails {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.testimonial-carousel .carousel-thumbnails img {
+    width: 80px;
+    height: auto;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+/* Estilos para destacar a miniatura da imagem atual */
+.testimonial-carousel .carousel-thumbnails img.active {
+    border: 2px solid #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container__banner {
+    background-color: #f3f3f3;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    overflow-x: hidden;
+    /* Para evitar a barra de rolagem horizontal */
+}
+
+.banner__text {
+    flex: 1;
+    padding: 10px;
+    /* Espaçamento interno da div da frase */
+    display: flex;
+    align-items: center;
+    /* Centralizar verticalmente o conteúdo da div */
+}
+
+.subtitle {
+    color: black;
+    font-size: 16px;
+    margin: 0;
+}
+
+.frase-abaixo {
+    color: black;
+    font-size: 16px;
+    margin: 0;
+    margin-left: 10px;
+    /* Espaçamento entre a frase e o banner */
+}
+
+.banner__content {
+    flex: 1;
+    padding: 10px;
+    /* Espaçamento interno da div do banner */
+    display: flex;
+    flex-direction: column;
+    /* Para colocar o botão abaixo do banner */
+}
+
+.banner {
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    /* Para ocupar todo o espaço disponível na div banner__content */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Espaço entre o conteúdo e o botão */
+}
+
+.title {
+    color: black;
+    font-size: 24px;
+    margin: 0;
+}
+
+.destacado {
+    color: black;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.negrito {
+    color: black;
+    font-weight: bold;
+    margin: 0;
+}
+
+.tick-group {
+    text-align: left;
+    margin: 10px 0;
+}
+
+.tick {
+    color: black;
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.banner__content-inner {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cta-button {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 15px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: auto;
+    /* Para o botão ficar no final da div */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+/* Estilo para que o botão não seja maior que o banner */
+.banner__content .cta-button {
+    max-width: 100%;
+}
+
+/* Efeito hover */
+.cta-button:hover {
+    background-color: gray;
+    color: black;
+    border-color: gray;
+}
+
+
+
+
+
+
+
+
+
+
+
+.container__duvida {
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.duvida__content {
+    text-align: center;
+}
+
+.duvida__content h3 {
+    font-size: 36px;
+    /* Tamanho da fonte igual ao h3 class="title" */
+    color: black;
+    margin: 0 0 10px;
+    /* Espaçamento abaixo do título */
+}
+
+.duvida__content p {
+    font-size: 22px;
+    color: black;
+    margin: 0 0 20px;
+    /* Espaçamento abaixo do parágrafo */
+}
+
+.duvida__content .cta-button {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 15px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+/* Efeito hover */
+.duvida__content .cta-button:hover {
+    background-color: gray;
+    color: black;
+    border-color: gray;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container__perguntas {
+    background-color: silver;
+    padding: 20px;
+}
+
+.duvidas__titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.duvidas__content {
+    text-align: left;
+}
+
+.pergunta {
+    margin-bottom: 20px;
+}
+
+.pergunta__titulo {
+    display: flex;
+    justify-content: flex-start;
+    /* Alinhar o sinal de + e o título ao início */
+    align-items: center;
+    /* Alinhar o sinal de + verticalmente */
+    cursor: pointer;
+    /* Transformar o cursor em uma mãozinha quando passar por cima do título */
+}
+
+.pergunta__titulo .title {
+    font-size: 36px;
+    color: black;
+    margin: 0;
+}
+
+.sinal-mais {
+    font-size: 24px;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.resposta {
+    font-size: 24px;
+    color: black;
+    display: none;
+    /* Esconder a resposta por padrão */
+}
+
+/* Efeito para mostrar a resposta ao clicar no sinal de + */
+.pergunta.active .resposta {
+    display: block;
+}
